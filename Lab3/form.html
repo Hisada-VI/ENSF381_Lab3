@@ -18,10 +18,12 @@ Description : A simple HTML file for form tag.
     <form action="#" method="post">
         <fieldset>
             <legend>Personal Information</legend>
-            <!-- Add a label and input field for 'Name' here -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="username"><br>   
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email"><br>
-            <!-- Add a label and input field for 'Password' here, ensure to use the correct type for password fields -->
+            <label for="password">Password:</label><br>
+            <input type="text" id="password" name="password"><br>
         </fieldset>
 
         <fieldset>
@@ -29,26 +31,36 @@ Description : A simple HTML file for form tag.
             <p>Gender:</p>
 			<input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
-            <!-- Create radio buttons for 'Female', and 'Other' gender options -->
-	
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
             <label for="fruits">Choose a fruit:</label><br>
-            <select id="fruits" name="fruits">
+            <select id="fruits" name="fruits" size="5">
 				<option value="apple">Apple</option>
-                <!-- Add options for various fruits like Banana, Orange, etc. (At least 10 fruits) -->
+                <option value="Blueberry">Blueberry</option>
+                <option value="Cherry">Cherry</option>
+                <option value="Durian">Durian</option>
+                <option value="Elderberry">Elderberry</option>
+                <option value="Fig">Fig</option>
+                <option value="Grapes">Grapes</option>
+                <option value="Honeydew Melon">Honeydew Melon</option>
+                <option value="Imbe">Imbe</option>
+                <option value="Jackfruit">Jackfruit</option>
+                <option value="Kiwi">Kiwi</option>
             </select><br>
-			<!-- Add some attributes to select tag that changes it from a drop menu to a scrollable list.-->
         </fieldset>
 
         <fieldset>
             <legend>Other Elements</legend>
-            <!-- Add a label and input field for 'Birthday' here, use the appropriate type for date selection -->
+            <label for="birthday">Birthday:</label>
+            <input type="date"><br>
             <label for="favcolor">Favorite Color:</label><br>
             <input type="color" id="favcolor" name="favcolor"><br>
-            <!-- Add a label and number input field for 'Quantity', set min to 1 and max to 5 -->
+            <label for="quantity">Quantity (between 1 and 5):</label><br>
+            <input type="range" id="quantity" name="quantity" min="1" max="5"><br>
             <label for="range">Range (between 1 and 10):</label><br>
-            <input type="range" id="range" name="range" min="1" max="10"><br>
-			<!-- Add an attribute to the range input to set its initial value to 2-->
-            <!-- Add a label and input field for 'Homepage', use the correct type for URLs -->
+            <input type="range" id="range" name="range" min="1" max="10" value="2"><br>
+            <label for="homepage">Homepage:</label><br>
+            <input type="url" id="homepage" name="homepage"><br>
             <label for="feedback">Feedback:</label><br>
 			<textarea id="feedback" name="feedback"></textarea><br>
             <!-- Add some attributes to the feedback textarea tag to make it bigger and suitable for editing texts-->
